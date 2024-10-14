@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ajuste para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con API Spring Boot</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CRUD Productos</h1>
+
+        <!-- Formulario para crear un nuevo producto -->
+        <h2>Crear Producto</h2>
+        <div class="form-group">
+            <input type="text" id="productName" placeholder="Nombre del producto">
+        </div>
+        <div class="form-group">
+            <input type="number" id="productCategory" placeholder="Categoría">
+        </div>
+        <div class="form-group">
+            <input type="number" id="productPrice" placeholder="Precio">
+        </div>
+        <button onclick="createProduct()">Crear Producto</button>
+
+        <!-- Tabla para mostrar los productos -->
+        <h2>Lista de Productos</h2>
+        <table id="products-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="products-list">
+                <!-- Aquí se agregarán las filas de productos dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

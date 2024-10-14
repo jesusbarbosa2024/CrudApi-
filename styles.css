@@ -1,0 +1,154 @@
+/* Estilos globales para el cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente sencilla y legible */
+    background-color: #f3f4f6; /* Fondo gris claro para la página */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinear elementos usando Flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    min-height: 100vh; /* Altura mínima del viewport */
+}
+
+/* Contenedor principal que envuelve todo el contenido */
+.container {
+    width: 90%; /* Ocupa el 90% del ancho disponible */
+    max-width: 800px; /* Ancho máximo para pantallas grandes */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px; /* Espacio interno */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los títulos h1 y h2 */
+h1, h2 {
+    text-align: center; /* Centrar el texto */
+    color: #333333; /* Color de texto gris oscuro */
+    margin-bottom: 15px; /* Espacio inferior */
+    font-weight: 600; /* Negrita */
+}
+
+/* Estilo para los grupos de formularios */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior entre inputs */
+}
+
+/* Estilo para los campos de entrada (input) */
+input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px 15px; /* Espaciado interno */
+    margin-top: 5px; /* Margen superior pequeño */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s ease; /* Transición suave del borde */
+}
+
+/* Estilo para inputs cuando están enfocados */
+input:focus {
+    border-color: #4CAF50; /* Borde verde */
+    outline: none; /* Eliminar el borde por defecto del navegador */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Sombra verde suave */
+}
+
+/* Botones generales */
+button {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 12px; /* Espaciado interno */
+    margin-top: 10px; /* Espacio superior */
+    border: none; /* Eliminar borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    cursor: pointer; /* Cambiar cursor a mano */
+    transition: background-color 0.3s ease; /* Transición del color de fondo */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #45a049; /* Fondo verde oscuro */
+}
+
+/* Estilo específico para el botón de edición */
+button.btn-edit {
+    background-color: #2196F3; /* Fondo azul */
+}
+
+/* Efecto hover para el botón de edición */
+button.btn-edit:hover {
+    background-color: #1976D2; /* Azul más oscuro */
+}
+
+/* Estilo para el botón de eliminación */
+button.btn-delete {
+    background-color: #f44336; /* Fondo rojo */
+    margin-left: 5px; /* Espacio a la izquierda */
+}
+
+/* Efecto hover para el botón de eliminación */
+button.btn-delete:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%; /* Ocupa todo el ancho */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+    margin-top: 20px; /* Espacio superior */
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden; /* Asegurar que el contenido respete los bordes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para las filas del encabezado de la tabla */
+thead tr {
+    background-color: #4CAF50; /* Fondo verde */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Estilo general para las celdas de la tabla */
+th, td {
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Alinear texto al centro */
+    border-bottom: 1px solid #dddddd; /* Borde inferior gris claro */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo para las filas pares del cuerpo de la tabla */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+/* Efecto hover para las filas de la tabla */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Fondo gris más claro */
+    cursor: pointer; /* Cambiar cursor a mano */
+}
+
+/* Estilo para celdas editables */
+td[contenteditable="true"] {
+    background-color: #fff3e0; /* Fondo anaranjado claro */
+    border: 1px solid #ffa726; /* Borde anaranjado */
+}
+
+/* Estilo para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        width: 100%; /* Usar todo el ancho disponible */
+        margin: 10px; /* Espacio alrededor */
+    }
+
+    input, button {
+        font-size: 14px; /* Reducir tamaño de fuente */
+    }
+
+    th, td {
+        font-size: 14px; /* Reducir tamaño de fuente en la tabla */
+        padding: 10px; /* Reducir espaciado */
+    }
+}
+
